@@ -1,0 +1,1 @@
+// Etkileşimleri JavaScript aşamasında ekleyeceğiz.
