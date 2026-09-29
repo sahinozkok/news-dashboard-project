@@ -26,6 +26,7 @@ const newsList = document.querySelector(".news-list");
 const searchInput = document.querySelector("#search-input");
 const categoryFilter = document.querySelector("#category-filter");
 const sortOrder = document.querySelector("#sort-order");
+const themeToggle = document.querySelector("#theme-toggle");
 
 function renderNews(items) {
   newsList.innerHTML = "";
@@ -81,6 +82,17 @@ function applyFilters() {
 searchInput.addEventListener("input", applyFilters);
 categoryFilter.addEventListener("change", applyFilters);
 sortOrder.addEventListener("change", applyFilters);
+
+themeToggle.addEventListener("click", () => {
+  const isDarkMode = document.body.classList.toggle("dark-mode");
+
+  if (isDarkMode) {
+    themeToggle.textContent = "Aydınlık modu aç";
+    return;
+  }
+
+  themeToggle.textContent = "Karanlık modu aç";
+});
 
 console.log("Haberler:", news);
 applyFilters();
