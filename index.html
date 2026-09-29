@@ -13,28 +13,30 @@
     </header>
 
     <main>
-      <section class="news-list" aria-label="Haber listesi">
-        <article class="news-card">
-          <h2>Yapay zekâ medya sektörünü nasıl değiştiriyor?</h2>
-          <p><strong>Kategori:</strong> Teknoloji</p>
-          <p><strong>Yayın tarihi:</strong> 27 Eylül 2026</p>
-          <p><strong>Durum:</strong> Yayında</p>
-        </article>
+      <section class="controls" aria-label="Haber arama araçları">
+        <label for="search-input">Başlığa göre haber ara</label>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Örneğin: yapay zekâ"
+        />
 
-        <article class="news-card">
-          <h2>Şahin javascript öğreniyor?</h2>
-          <p><strong>Kategori:</strong> Eğitim</p>
-          <p><strong>Yayın tarihi:</strong> 27 Eylül 2026</p>
-          <p><strong>Durum:</strong> Taslak</p>
-        </article>
+        <label for="category-filter">Kategori</label>
+        <select id="category-filter">
+          <option value="Tümü">Tüm kategoriler</option>
+          <option value="Teknoloji">Teknoloji</option>
+          <option value="Eğitim">Eğitim</option>
+          <option value="Medya">Medya</option>
+        </select>
 
-        <article class="news-card">
-          <h2>Yeni dijital yayın platformu kullanıma açıldı</h2>
-          <p><strong>Kategori:</strong> Medya</p>
-          <p><strong>Yayın tarihi:</strong> 26 Eylül 2026</p>
-          <p><strong>Durum:</strong> Yayında</p>
-        </article>
+        <label for="sort-order">Tarihe göre sırala</label>
+        <select id="sort-order">
+          <option value="newest">Yeniden eskiye</option>
+          <option value="oldest">Eskiden yeniye</option>
+        </select>
       </section>
+
+      <section class="news-list" aria-label="Haber listesi"></section>
     </main>
 
     <script src="script.js"></script>

@@ -29,6 +29,25 @@ main {
   padding: 24px 20px;
 }
 
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls label {
+  display: block;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  font: inherit;
+}
+
 .news-list {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +64,15 @@ main {
 
 .news-card h2 {
   margin-top: 0;
+}
+
+.no-results {
+  width: 100%;
+  padding: 20px;
+  border: 1px dashed #9ca3af;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
